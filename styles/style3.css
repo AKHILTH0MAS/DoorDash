@@ -1,0 +1,21 @@
+@media  (min-width: 960px) {
+    .md{
+        display: none;
+    }
+    .title-md{
+        display: none;
+    }
+    .title-mdx{
+        display: block;
+        position: absolute;
+        top: 0;
+        margin: 24px 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .mdx{
+        display: flex;
+    }
+}
