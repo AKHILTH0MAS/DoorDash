@@ -27,8 +27,15 @@ h1 {
   font-family: "TTNorms-extrabold";
   src: url(https://typography.doordash.com/TTNorms-ExtraBold.woff2);
 }
+:root{
+  --TTNormsRegular: "TTNorms-regular";
+  --TTNormsMedium: "TTNorms-medium";
+  --TTNormsBold: "TTNorms-bold";
+  --TTNormsExtraBold: "TTNorms-extrabold";
+}
 .new-item-open-app{
-  display: grid;
+  /* display: grid; */
+  display: none;
   grid-template-rows: auto auto auto;
   grid-template-columns: auto 1fr auto;
   column-gap: 8px;
@@ -48,7 +55,7 @@ h1 {
   border-radius: 9999px;
   height: fit-content;
   color: rgb(255, 255, 255);
-  font-family: "TT Norms", -apple-system, "BlinkMacSystemFont", "Segoe UI",
+  font-family: var(--TTNormsMedium), -apple-system, "BlinkMacSystemFont", "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   font-size: 16px;
@@ -70,7 +77,7 @@ h1 {
   font-size: 16px;
   font-weight:700;
   line-height: 22px;
-  letter-spacing: -0.01px;
+  letter-spacing: 0.01px;
   text-decoration: none;
   text-transform: none;
   display: block;
@@ -116,11 +123,11 @@ h1 {
   color: rgb(25, 25, 25);
   font-size: 16px;
   font-weight: 700;
-  font-family: "TT Norms", -apple-system, "BlinkMacSystemFont", "Segoe UI",
+  font-family: var(--TTNormsBold), -apple-system, "BlinkMacSystemFont", "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   line-height: 22px;
-  letter-spacing: -0.01;
+  letter-spacing: -0.01px;
   background-color: #fff;
   box-sizing: border-box;
   padding: 0 12px;
@@ -134,7 +141,7 @@ h1 {
 }
 .open-button {
   color: rgb(255, 255, 255);
-  font-family: "TT Norms", -apple-system, "BlinkMacSystemFont", "Segoe UI",
+  font-family: var(--TTNormsBold), -apple-system, "BlinkMacSystemFont", "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   font-size: 16px;
@@ -165,11 +172,12 @@ h1 {
 .hero-banner-items {
   display: flex;
   flex-flow: column;
+  max-width: max-content ;
   align-items: center;
 }
 .title{
   margin: 20px 0;
-  gap: 10px;
+  gap: 8px;
   align-items: center;
 }
 .sub-title {
@@ -180,7 +188,7 @@ h1 {
   max-width: 350px;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-family: "TT Norms", -apple-system, "BlinkMacSystemFont", "Segoe UI",
+  font-family: var(--TTNormsBold), -apple-system, "BlinkMacSystemFont", "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   margin-bottom: 24px;
@@ -193,7 +201,7 @@ h1 {
   border-radius: 22px;
   padding: 4px 4px 4px 16px;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
 }
 .search-icon {
   margin-right: 12px;
@@ -206,13 +214,17 @@ h1 {
   align-items: center;
   flex-grow: 1;
   max-width: 100%;
+  padding: 0;
   margin: 0 12px 0 auto;
-  font-family: "TT Norms", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: var(--TTNormsMedium), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
+  color: #687284;
+  text-decoration: none;
+  border: none;
 }
 
 .arrow-icon
@@ -233,7 +245,7 @@ h1 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 4px;
   min-height: 32px;
   max-width: 100%;
   text-align: center;
@@ -243,6 +255,9 @@ h1 {
   justify-content: center;
   margin: 0 auto;
   
+}
+.margin-12-5{
+  margin: 0px  12.5px;
 }
 .app-ad-container{
   margin: 20px 20px 0;
@@ -270,15 +285,18 @@ h1 {
   line-height: 22px;
   margin-bottom: 4px;
   font-size: 18px;
-  font-family: DD-TTNorms, -apple-system,BlinkMacSystemFont, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji" , "Segoe UI Emoji", "Segoe UI symbol";
+  font-family: var(--TTNormsMedium), -apple-system,BlinkMacSystemFont, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji" , "Segoe UI Emoji", "Segoe UI symbol";
   font-weight: 700;
   color: rgb(25, 25, 25);
 }
-.app-add-sub-title{
+.app-ad-sub-title{
   font-size: 14px;
   font-weight: 500;
   color: rgb(118, 118, 118);
-  font-family: "TTNorms", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 22px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+  font-family: var(--TTNormsRegular), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .get-app-button{
   display: inline-flex;
@@ -289,8 +307,78 @@ h1 {
   text-align: center;
   background-color: rgb(235, 23, 0);
   color: #fff;
+  border: none;
+  gap: 4px;
+  padding: 0 12px;
 }
-.idid
+/* 27-06-2024 */
+.get-app-text{
+  font-size: 14px;
+  font-family: var(--TTNormsMedium);
+  font-weight: 700;
+  line-height: 16px;
+
+}
+.section-2{
+
+  display: flex;
+  justify-content: center
+}
+.option-contents{
+  max-width: 250px;
+}
+.options{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  padding: 8px;
+  box-sizing: border-box;
+
+}
+.option{
+  display: flex;
+  padding: 16px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.option-img
+{
+  width: 88px;
+  margin-right: 32px;
+  box-sizing: border-box;
+}
+.option-title{
+  font-size: 32px;
+  color: #191919;
+  font-family: var(--TTNormsBold);
+  font-weight: 700;
+}
+.option-content{
+  font-size: 18px;
+  font-family: var(--TTNormsMedium);
+  font-weight: 500;
+  line-height: 24px;
+  color: #191919;
+  letter-spacing: -0.01px;
+
+}
+.option-link{
+  margin: 12px 0 0 0;
+  color: #EB1700;
+  font-size: 14px;
+  font-family: var(--TTNormsBold);
+  line-height: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+}
+
+
+
+
 
 
 
