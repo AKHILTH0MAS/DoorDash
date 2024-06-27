@@ -5,6 +5,9 @@
   .md {
     display: flex;
   }
+  .app-ad{
+    display: none;
+  }
   .new-item-open-app {
     display: none;
   }
@@ -15,27 +18,37 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
+  }
+  .login-button{
+    font-size: 18px;
   }
   .open-button {
     font-size: 18px;
     height: 40px;
   }
   .sub-title {
-    font-size: 38px;
+    font-size: 40px;
     line-height: 40px;
     font-weight: 700;
     max-width: none;
-    margin-top: 30px;
+    padding-top: 55px;
+    
   }
   .search-bar {
     width: 50%;
   }
-
+  .search-bar-input{
+    flex-grow: 1;
+  }
   .hero-banner {
     height: 650px;
     background: url(/doordash/assets/hero_desktop.png);
     background-size: cover;
     background-position: center;
+  }
+  .option-img{
+    margin: 0 64px 0 0;
+    width: 124px;
   }
 }
