@@ -27,13 +27,15 @@ h1 {
   font-family: "TTNorms-extrabold";
   src: url(https://typography.doordash.com/TTNorms-ExtraBold.woff2);
 }
-:root{
+:root {
   --TTNormsRegular: "TTNorms-regular";
   --TTNormsMedium: "TTNorms-medium";
   --TTNormsBold: "TTNorms-bold";
   --TTNormsExtraBold: "TTNorms-extrabold";
 }
-.new-item-open-app{
+
+
+.new-item-open-app {
   display: grid;
   /* display: none; */
   grid-template-rows: auto auto auto;
@@ -43,7 +45,7 @@ h1 {
   align-items: center;
   padding: 8px;
 }
-.open2{
+.open2 {
   width: auto;
   max-width: 100%;
   /* min-height: 32px; */
@@ -51,13 +53,13 @@ h1 {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding : 6px 13px;
+  padding: 6px 13px;
   border-radius: 9999px;
   height: fit-content;
   color: rgb(255, 255, 255);
-  font-family: var(--TTNormsMedium), -apple-system, "BlinkMacSystemFont", "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: var(--TTNormsMedium), -apple-system, "BlinkMacSystemFont",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
@@ -71,11 +73,13 @@ h1 {
   align-items: center;
   /* padding: 0 12px; */
 }
-.new-items-texts-title{
+.new-items-texts-title {
   color: #191919;
-  font-family: "TTNorms", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "TTNorms", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   font-size: 16px;
-  font-weight:700;
+  font-weight: 700;
   line-height: 22px;
   letter-spacing: 0.01px;
   text-decoration: none;
@@ -88,9 +92,11 @@ h1 {
   margin: 0px;
   padding: 0px;
 }
- .new-items-texts-sub-title{
+.new-items-texts-sub-title {
   color: #606060;
-  font-family: "TTNorms", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "TTNorms", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -103,7 +109,7 @@ h1 {
   white-space: nowrap;
   margin: 0px;
   padding: 0px;
- }
+}
 .navbar-pos {
   position: absolute;
   top: 0;
@@ -123,9 +129,9 @@ h1 {
   color: rgb(25, 25, 25);
   font-size: 16px;
   font-weight: 700;
-  font-family: var(--TTNormsBold), -apple-system, "BlinkMacSystemFont", "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: var(--TTNormsBold), -apple-system, "BlinkMacSystemFont",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 22px;
   letter-spacing: -0.01px;
   background-color: #fff;
@@ -141,9 +147,9 @@ h1 {
 }
 .open-button {
   color: rgb(255, 255, 255);
-  font-family: var(--TTNormsBold), -apple-system, "BlinkMacSystemFont", "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: var(--TTNormsBold), -apple-system, "BlinkMacSystemFont",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 16px;
   font-weight: 700;
   line-height: 22px;
@@ -154,6 +160,7 @@ h1 {
   background-color: #eb1700ff;
   display: inline-flex;
   align-items: center;
+  border-radius: 999px;
   padding: 0 12px;
 }
 .hero-banner {
@@ -172,10 +179,10 @@ h1 {
 .hero-banner-items {
   display: flex;
   flex-flow: column;
-  max-width: max-content ;
+  max-width: max-content;
   align-items: center;
 }
-.title{
+.title {
   margin: 20px 0;
   gap: 8px;
   align-items: center;
@@ -188,9 +195,9 @@ h1 {
   max-width: 350px;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-family: var(--TTNormsBold), -apple-system, "BlinkMacSystemFont", "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: var(--TTNormsBold), -apple-system, "BlinkMacSystemFont",
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   margin-bottom: 24px;
 }
 .search-bar {
@@ -216,9 +223,9 @@ h1 {
   max-width: 100%;
   padding: 0;
   margin: 0 12px 0 auto;
-  font-family: var(--TTNormsMedium), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
+  font-family: var(--TTNormsMedium), -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
@@ -226,20 +233,21 @@ h1 {
   text-decoration: none;
   border: none;
 }
-
-.arrow-icon
-{
+.arrow-icon-lg {
+  display: none;
+}
+.arrow-icon {
   width: 40px;
   height: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
-.person-icon{
+.person-icon {
   display: inline-flex;
   align-items: center;
 }
-.login-2{
+.login-2 {
   font-size: 14px;
   margin-top: 16px;
   display: inline-flex;
@@ -250,16 +258,15 @@ h1 {
   max-width: 100%;
   text-align: center;
 }
-.app-ad{
+.app-ad {
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  
 }
-.margin-12-5{
-  margin: 0px  12.5px;
+.margin-12-5 {
+  margin: 0px 12.5px;
 }
-.app-ad-container{
+.app-ad-container {
   margin: 20px 20px 0;
   width: 400px;
   border-radius: 16px;
@@ -272,7 +279,7 @@ h1 {
   box-sizing: border-box;
   padding: 20px;
 }
-.app-logo{
+.app-logo {
   background-color: #fff;
   padding: 8px;
   box-sizing: border-box;
@@ -281,24 +288,29 @@ h1 {
   border-radius: 16px;
   border: 1px solid rgb(231, 231, 231);
 }
-.app-ad-title{
+.app-ad-title {
   line-height: 22px;
   margin-bottom: 4px;
   font-size: 18px;
-  font-family: var(--TTNormsMedium), -apple-system,BlinkMacSystemFont, "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji" , "Segoe UI Emoji", "Segoe UI symbol";
+  font-family: var(--TTNormsMedium), -apple-system, BlinkMacSystemFont,
+    "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI symbol";
   font-weight: 700;
   color: rgb(25, 25, 25);
 }
-.app-ad-sub-title{
+.app-ad-sub-title {
   font-size: 14px;
   font-weight: 500;
   color: rgb(118, 118, 118);
   line-height: 22px;
   margin-bottom: 8px;
   box-sizing: border-box;
-  font-family: var(--TTNormsRegular), system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: var(--TTNormsRegular), system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+    "Open Sans", "Helvetica Neue", sans-serif;
 }
-.get-app-button{
+.get-app-button {
   display: inline-flex;
   min-height: 32px;
   align-items: center;
@@ -312,22 +324,20 @@ h1 {
   padding: 0 12px;
 }
 /* 27-06-2024 */
-.get-app-text{
+.get-app-text {
   font-size: 14px;
   font-family: var(--TTNormsMedium);
   font-weight: 700;
   line-height: 16px;
-
 }
-.section-2{
-
+.section-2 {
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
-.option-contents{
+.option-contents {
   max-width: 250px;
 }
-.options{
+.options {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -335,38 +345,35 @@ h1 {
   margin: 40px 0;
   padding: 8px;
   box-sizing: border-box;
-
 }
-.option{
+.option {
   display: flex;
   padding: 16px;
   align-items: flex-start;
   justify-content: center;
 }
-.option-img
-{
+.option-img {
   width: 88px;
   margin-right: 32px;
   box-sizing: border-box;
 }
-.option-title{
+.option-title {
   font-size: 32px;
   color: #191919;
   font-family: var(--TTNormsBold);
   font-weight: 700;
 }
-.option-content{
+.option-content {
   font-size: 18px;
   font-family: var(--TTNormsMedium);
   font-weight: 500;
   line-height: 24px;
   color: #191919;
   letter-spacing: -0.01px;
-
 }
-.option-link{
+.option-link {
   margin: 12px 0 0 0;
-  color: #EB1700;
+  color: #eb1700;
   font-size: 14px;
   font-family: var(--TTNormsBold);
   line-height: 22px;
@@ -376,7 +383,7 @@ h1 {
   justify-content: center;
 }
 
-.container-box{
+.container-box {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -393,7 +400,7 @@ h1 {
   overflow: clip;
   overflow-clip-margin: content-box;
 }
-.container-box-title{
+.common-title {
   color: #191919;
   font-family: var(--TTNormsMedium);
   font-size: 24px;
@@ -403,7 +410,7 @@ h1 {
   margin-top: 20px;
   max-width: 90%;
 }
-.container-box-sub-title{
+.common-sub-title {
   color: #191919;
   font-family: var(--TTNormsMedium);
   font-size: 18px;
@@ -412,7 +419,7 @@ h1 {
   margin-top: 10px;
   text-align: left;
 }
-.container-box-content{
+.common-content {
   margin-top: 10px;
   margin-top: 10px;
   color: #191919;
@@ -422,11 +429,14 @@ h1 {
   line-height: 20px;
   text-align: left;
 }
-.container-box-button{
+.container-box-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 32px;
   border-radius: 999px;
   text-decoration: none;
-  background-color: #EB1700;
+  background-color: #eb1700;
   color: #ffff;
   border: none;
   padding: 0 12px;
@@ -436,57 +446,147 @@ h1 {
   line-height: 20px;
   margin-top: 20px;
 }
-img{
+img {
   overflow-clip-margin: content-box;
-      overflow: clip;
+  overflow: clip;
 }
-.box-1{
+.box-1 {
   margin-bottom: -300px;
 }
-.box-2{
+.box-2 {
   background: rgb(254, 241, 238);
   padding-top: 320px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.sm{
+.section-4 {
+  background-image: url(../assets/grocery_mobile.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-4-display-flex {
+  justify-content: center;
+  background-color: rgba(30, 30, 30, 0.6);
   display: flex;
 }
-.mdx{
+.grocery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 550px;
+  height: 350px;
+}
+.convenience-stores-img {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+.convenience-stores {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* sections-6 */
+.section-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px 20px 20px;
+
+}
+.section-6-background{
+  background-color: rgb(254, 241, 238);
+
+}
+.section-title {
+  letter-spacing: 1px;
+  text-align: center;
+  max-width: 320px;
+  font-family: var(--TTNormsBold);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.scroll-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  width: 300%;
+}
+.item-inner-container-1 {
+  margin-left: 5%;
+  margin-right: -10%;
+}
+.item-inner-container-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.section-6-img {
+  height: 180px;
+  object-fit: cover;
+  width: 100%;
+}
+.item-container-contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.item-container-text {
+  text-align: center;
+  max-width: 90%;
+  margin-top: 20px;
+  font-family: var(--TTNormsMedium);
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+.item-container-content {
+  margin-top: 10px;
+  text-align: center;
+  font-family: var(--TTNormsMedium);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+.item-container-warning-text{
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+  font-family: var(--TTNormsBold);
+  margin-top: 20px;
+}
+.section-6-container {
+  background-color: rgb(254, 241, 238);
+  overflow-x: scroll;
+  scrollbar-width: none;
+}
+
+.sm {
+  display: flex;
+}
+.mdx {
   display: none;
 }
-.title-mdx{
+.title-mdx {
   display: none;
 }
-.title-md{
+.title-md {
   display: none;
 }
-.md{
+.md {
   display: none;
 }
-.title-mdx{
+.title-mdx {
   display: none;
 }
