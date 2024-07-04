@@ -170,5 +170,11 @@
     line-height: 32px;
     max-width: 500px;
   }
-  
+  .cities-title{
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .top-cities{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
