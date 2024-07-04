@@ -2,6 +2,31 @@
     .top-cities{
      grid-template-columns: 1fr 1fr 1fr 1fr;
       }
+      .app-flex{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+      .category:nth-of-type(1){
+        padding: 32px 0 0 0;
+      }
+      .footer{
+        width: 100%;
+        max-width: 1160px;
+       margin: 0 auto;
+      }
+      .c3 .category:nth-of-type(1){
+        padding: 64px 0 0 0;
+      }
+      .category{
+        padding: 64px 0 0 0;
+      }
+      .app-stores{
+        padding: 64px 0 0 0;
+      }
+      .final{
+        width: 60%;
+      }
     .md{
         display: none;
     }
