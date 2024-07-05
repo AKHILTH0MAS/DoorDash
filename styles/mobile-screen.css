@@ -166,7 +166,7 @@ h1 {
 .hero-banner {
   height: 550px;
   position: relative;
-  background: url("/doordash/assets/hero_mobile.png");
+  background: url("assets/hero_mobile.png");
   background-size: cover;
   display: flex;
   flex-flow: column;
