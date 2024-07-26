@@ -127,7 +127,7 @@ body {
   justify-content: flex-end;
   gap: 8px;
 }
-.margin-12-around{
+.margin-12-around {
   margin: 12px;
 }
 .login-button {
@@ -173,13 +173,12 @@ body {
   position: relative;
   background: url("../assets/hero_mobile.png");
   background-size: cover;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;    align-items: center;
   display: flex;
   flex-flow: column;
-  width: 100%;
   justify-content: center;
-  background-position: center center;
-  align-items: center;
-  background-repeat: no-repeat;
 }
 .hero-banner-items {
   display: flex;
@@ -261,7 +260,10 @@ body {
   max-width: 100%;
   text-align: center;
 }
-
+.app-ad {
+  max-width: 400px;
+  margin: 0 auto;
+}
 .app-ad-container {
   margin: 20px 20px 0;
   max-width: 400px;
@@ -471,7 +473,6 @@ img {
   margin-top: 70px;
   margin-bottom: 70px;
   max-width: 550px;
-
 }
 .convenience-stores-img {
   height: 180px;
@@ -529,7 +530,7 @@ img {
   padding: 20px;
   margin-right: -38px;
 }
-.inner-item-container:nth-child(4){
+.inner-item-container:nth-child(4) {
   padding: 20px 40px 20px 20px;
 }
 .container-contents {
@@ -626,7 +627,6 @@ img {
 .cities-button:nth-child(1) {
   border-bottom: 3px solid #606060;
   font-family: var(--TTNormsBold);
-
 }
 .cities-button:nth-child(2) {
   opacity: 0.7;
@@ -650,7 +650,7 @@ img {
   justify-content: center;
   font-family: var(--TTNormsMedium);
 }
-.category:nth-child(1){
+.category:nth-child(1) {
   padding: 32px 0 0 0;
 }
 .category {
@@ -660,14 +660,14 @@ img {
   align-items: center;
   justify-content: center;
 }
-.footer-category{
+.footer-category {
   padding: 32px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.margin-12-around span{
+.margin-12-around span {
   font-size: 14px;
   line-height: 20px;
   letter-spacing: -0.01px;
@@ -685,6 +685,14 @@ img {
 }
 .popular-category-items {
   text-align: center;
+  margin: 18px 0;
+}
+.popular-category-items:nth-child(1) {
+  margin: 0 0 0 0;
+}
+.popular-category-items:last-child {
+  margin: 18px 0 0 0;
+  padding-bottom: 32px;
 }
 .category-items {
   text-align: center;
@@ -743,7 +751,7 @@ footer {
   justify-content: center;
   margin-bottom: 32px;
 }
-.final .logo{
+.final .logo {
   height: 18px;
 }
 .copyright-text {
@@ -777,4 +785,10 @@ footer {
 }
 .title-mdx {
   display: none;
+}
+
+@media screen and (min-width: 425px) {
+  .margin-26 {
+    margin-top: 25px;
+  }
 }
