@@ -1,49 +1,63 @@
-@media  (min-width: 960px) {
-    .top-cities{
-     grid-template-columns: 1fr 1fr 1fr 1fr;
-      }
-      .app-flex{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-      }
-      .category:nth-of-type(1){
-        padding: 32px 0 0 0;
-      }
-      .footer{
-        width: 100%;
-        max-width: 1160px;
-       margin: 0 auto;
-      }
-      .c3 .category:nth-of-type(1){
-        padding: 64px 0 0 0;
-      }
-      .category{
-        padding: 64px 0 0 0;
-      }
-      .app-stores{
-        padding: 64px 0 0 0;
-      }
-      .final{
-        width: 60%;
-      }
-    .md{
-        display: none;
-    }
-    .title-md{
-        display: none;
-    }
-    .title-mdx{
-        display: block;
-        position: absolute;
-        top: 0;
-        margin: 24px 0;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-    }
-    .mdx{
-        display: flex;
-    }
+@media (min-width: 960px) {
+  .top-cities {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .hero-banner-items-parent{
+    padding-top: 72px;
+  }
+  .app-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .category:nth-of-type(1) {
+    padding: 32px 0 0 0;
+  }
+  .search-bar {
+    right: 0;
+  }
+  .container-title h1{
+    margin: 20px 0 0 0;
+  }
+  .convenience-stores{
+    padding: 60px 20px 20px;
+  }
+  .footer {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  .margin-26{
+    margin-top: 20px;
+  }
+  .popular-category-items:last-child{
+    margin: 0;
+  }
+.popular-category-items{
+  margin: 0;
+}
+
+  .c3{
+    width: 460px;
+    justify-content: space-between;
+  }
+  .md {
+    display: none;
+  }
+  .title-md {
+    display: none;  
+  }
+  .title-mdx {
+    display: block;
+    position: absolute;
+    top: 0;
+    margin: 24px 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .mdx {
+    display: flex;
+  }
 }

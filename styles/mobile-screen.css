@@ -2,11 +2,14 @@ body,
 ul,
 li,
 a,
-h1 {
+h1,
+h6,
+p {
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
+
 @font-face {
   font-family: "TTNorms-regular";
   src: url(https://typography.doordash.com/TTNorms-Regular.woff2);
@@ -35,6 +38,7 @@ h1 {
 }
 body {
   overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 .new-item-open-app {
@@ -129,6 +133,7 @@ body {
 }
 .margin-12-around {
   margin: 12px;
+  width: 150px;
 }
 .login-button {
   color: rgb(25, 25, 25);
@@ -175,7 +180,8 @@ body {
   background-size: cover;
   width: 100%;
   background-position: center center;
-  background-repeat: no-repeat;    align-items: center;
+  background-repeat: no-repeat;
+  align-items: center;
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -250,7 +256,7 @@ body {
   align-items: center;
 }
 .login-2 {
-  font-size: 14px;
+  font-size: 14px !important;
   margin-top: 16px;
   display: inline-flex;
   align-items: center;
@@ -379,23 +385,7 @@ body {
   justify-content: center;
   letter-spacing: -0.01px;
 }
-.container-box {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  min-width: 90%;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
-}
 
-.container-box-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  overflow: clip;
-  overflow-clip-margin: content-box;
-}
 .common-title {
   color: #191919;
   font-family: var(--TTNormsBold);
@@ -411,9 +401,10 @@ body {
   font-family: var(--TTNormsBold);
   font-size: 18px;
   /* font-weight: 700; */
+
   line-height: 22px;
   margin-top: 10px;
-  text-align: left;
+  text-align: center;
 }
 .common-content {
   margin-top: 10px;
@@ -425,33 +416,68 @@ body {
   line-height: 20px;
   text-align: left;
 }
-.container-box-button {
+.section-3-container-1{
+  padding: 20px;
+  margin-bottom: -300px;
+}
+.section-3-container-2-wrapper{
+  background: #fef1ee;
+
+}
+.section-3-container-2{
+  padding: 320px 20px 20px;
+}
+.container-title h1 {
+  color: #191919;
+  font-size: 24px;
+  font-family: var(--TTNormsBold);
+  font-weight: 700;
+  line-height: 28px;
+  text-align: left;
+  margin-top: 25px;
+  max-width: 90%;
+}
+.container-subtitle h6{
+  color: #191919;
+  font-family: var(--TTNormsBold);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  margin-top: 10px;
+}
+.container-content p{
+  margin-top: 10px;
+  margin-top: 10px;
+  color: #191919;
+  font-family: var(--TTNormsMedium);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  margin-top: 10px;
+}
+.container-button {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 32px;
-  border-radius: 999px;
+  border-radius: 9999px;
   text-decoration: none;
-  background-color: #eb1700;
+  background-color: #eb1700  !important;
   color: #ffff;
   border: none;
+  margin-top: 20px;
+  z-index: 2;
   padding: 0 12px;
+
+  position: relative;
+
+}
+.container-button span {
   font-size: 14px;
   font-family: var(--TTNormsBold);
   font-weight: 700;
   line-height: 20px;
-  margin-top: 20px;
-}
-img {
-  overflow-clip-margin: content-box;
-  overflow: clip;
-}
-.box-1 {
-  margin-bottom: -300px;
-}
-.box-2 {
-  background: rgb(254, 241, 238);
-  padding-top: 320px;
 }
 
 .section-4 {
@@ -474,9 +500,12 @@ img {
   margin-bottom: 70px;
   max-width: 550px;
 }
-.convenience-stores-img {
+.convenience-stores-img img{
   height: 180px;
   object-fit: cover;
+  width: 100%;
+}
+.convenience-stores-img{
   width: 100%;
 }
 .convenience-stores {
